@@ -36,6 +36,10 @@ public class MoreMultiThreading {
         p3 = new Messeger("message");
 
         System.out.println("press ctrl+c to end all this");
+        
+        p1.t.setPriority(2);
+        p2.t.setPriority(5);
+        p3.t.setPriority(1);
 
         p1.t.start();
         p2.t.start();
